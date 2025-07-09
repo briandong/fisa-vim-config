@@ -286,7 +286,7 @@ let g:tagbar_autofocus = 1
 map <F3> :NERDTreeToggle<CR>
 " open nerdtree with the current file selected
 nmap ,t :NERDTreeFind<CR>
-" don;t show these file types
+" don't show these file types
 let NERDTreeIgnore = ['\.pyc$', '\.pyo$']
 
 " Enable folder icons
@@ -374,7 +374,7 @@ let g:jedi#completions_enabled = 0
 " All these mappings work only for python code:
 " Go to definition
 let g:jedi#goto_command = ',d'
-" Find ocurrences
+" Find occurrences
 let g:jedi#usages_command = ',o'
 " Find assignments
 let g:jedi#goto_assignments_command = ',a'
@@ -412,7 +412,7 @@ highlight SignifySignChange cterm=bold ctermbg=237  ctermfg=227
 
 " Autoclose ------------------------------
 
-" Fix to let ESC work as espected with Autoclose plugin
+" Fix to let ESC work as expected with Autoclose plugin
 " (without this, when showing an autocompletion window, ESC won't leave insert
 "  mode)
 let g:AutoClosePumvisible = {"ENTER": "\<C-Y>", "ESC": "\<ESC>"}
