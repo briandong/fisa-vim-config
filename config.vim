@@ -6,7 +6,7 @@
 " and use a font from https://github.com/ryanoasis/nerd-fonts in your terminal
 " (if you aren't using one of those fonts, you will see funny characters here.
 " Trust me, they look nice when using one of those fonts).
-let fancy_symbols_enabled = 0
+let fancy_symbols_enabled = 1
 
 " To use the background color of your terminal app, change this setting from 0
 " to 1
@@ -57,6 +57,9 @@ endif
 " this needs to be here, so vim-plug knows we are declaring the plugins we
 " want to use
 call plug#begin(data_dir .. "/plugged")
+
+" Use ssh, instead of https
+let g:plug_url_format = 'git@github.com:%s.git'
 
 " Now the actual plugins:
 
