@@ -35,16 +35,16 @@ Installation instructions and docs at [vim.fisadev.com](https://vim.fisadev.com)
 
 | Key | Function |
 | -- | -- |
-|  | File Browser |
+|  | **File Browser** |
 | `F3` | open browser |
 | `,t` | open the location of current file |
-|  | Tab |
+|  | **Tab** |
 | `tt` | open new tab |
 | `<alt>-left/right` | navigate tabs |
 | `-` | choose window |
-|  | Clipboard |
+|  | **Clipboard** |
 | `<ctrl>-p/n` | cycle through clipboard (yank) history |
-|  | Find |
+|  | **Find** |
 | `,e` | find file recursively. `<ctrl>-t` to open the file in new tab |
 | `,g` | find symbol (class/method/variable/...) in current file |
 | `,G` | find symbol (class/method/variable/...) in all opened files |
@@ -57,15 +57,15 @@ Installation instructions and docs at [vim.fisadev.com](https://vim.fisadev.com)
 | `,c` | find command |
 | `,r` | grep code recursively using Ack! |
 | `,wr` | grep current word under the cursor recursively using Ack! |
-|  | Coding |
+|  | **Coding** |
 | `,d` | go to definition of the thing under the cursor |
 | `,o` | find occurrences of the thing under the cursor |
 | `<shift>-k` | show docstring of the thing under the cursor |
 | `\ci` | comment/uncomment code |
 | `F2` | open pending tasks list (comments in the current file starting with "TODO", "FIXME", etc) |
 | `F4` | open the item list of current file |
-|  | Git |
-| `:Git <CMD>` |  such as :Git status, :Git blame, :Git log, :Git commit, etc |
+|  | **Git** |
+| `:Git <CMD>` |  such as `:Git status`, `:Git blame`, `:Git log`, `:Git commit`, etc |
 
 ## Markdown Support
 
