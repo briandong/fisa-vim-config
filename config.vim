@@ -150,6 +150,11 @@ endif
 " Plug 'mattn/webapi-vim'
 " Plug 'jfo/hound.vim'
 
+" Markdown syntax highlight
+Plug 'tpope/vim-markdown'
+" Markdown instant preview
+Plug 'instant-markdown/vim-instant-markdown'
+
 " Tell vim-plug we finished declaring plugins, so it can load them
 call plug#end()
 

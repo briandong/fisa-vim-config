@@ -1,4 +1,4 @@
-"font
+"gui font
 if has('unix')
     "set guifont=DejaVu\ Sans\ Mono\ Bold\ 13
     set guifont=MartianMono\ Nerd\ Font\ 13
@@ -13,7 +13,7 @@ let $LANG = 'en'
 set langmenu=en
 
 "initial window size
-set lines=50 columns=150
+"set lines=50 columns=150
     
 "noncompatible mode
 set nocompatible
@@ -80,11 +80,11 @@ set wildmode=list:full
 set wildmenu
 set completeopt=longest,menu
 
-if has('gui_running')
-    set background=light
-else
-    set background=dark
-endif
+"if has('gui_running')
+"    set background=light
+"else
+"    set background=dark
+"endif
 
 "color scheme
 "colorscheme molokai
