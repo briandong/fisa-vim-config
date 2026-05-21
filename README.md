@@ -36,15 +36,16 @@ Installation instructions and docs at `vim.fisadev.com <https://vim.fisadev.com>
 | Key | Function |
 | -- | -- |
 |  | File Browser |
-| F3 | Open browser |
-| ,t | Open the location of current file |
+| `F3` | open browser |
+| `,t` | open the location of current file |
 |  | Tab |
-| tt | Open new tab |
-| <alt>+left/right | Navigate tabs |
-| `-` | Choose window |
+| `tt` | open new tab |
+| `<alt>+left/right` | navigate tabs |
+| `-` | choose window |
 |  | Clipboard |
-| <ctrl>+p/n | Cycle through clipboard(yank) history |
+| `<ctrl>+p/n` | cycle through clipboard(yank) history |
 |  | Coding |
+
 
 
 
