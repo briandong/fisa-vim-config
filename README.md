@@ -10,6 +10,8 @@ Installation instructions and docs at `vim.fisadev.com <https://vim.fisadev.com>
 0. vim 8.0 or newer, and compiled with python support (check with `vim --version | grep +python`)
 1. install dependencies
    ```shell
+   sudo apt update
+   sudo apt upgrade
    sudo apt install git curl python3-pip universal-ctags ack-grep
    sudo pip3 install pynvim flake8 pylint isort jedi
    ```
@@ -27,6 +29,22 @@ Installation instructions and docs at `vim.fisadev.com <https://vim.fisadev.com>
    ```
    This will remove plugins no longer used, install any new plugins, and update the existing ones to the last versions. 
 
-# How to Use
+# User Guide
+
+## Cheatsheet
+
+| Key | Function |
+| -- | -- |
+|  | File Browser |
+| F3 | Open browser |
+| ,t | Open the location of current file |
+|  | Tab |
+| tt | Open new tab |
+| <alt>+left/right | Navigate tabs |
+| `-` | Choose window |
+|  | Clipboard |
+| <ctrl>+p/n | Cycle through clipboard(yank) history |
+|  | Coding |
+
 
 
