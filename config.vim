@@ -16,8 +16,13 @@ set encoding=utf-8
 let using_neovim = has('nvim')
 let using_vim = !using_neovim
 
-let config_dir = has('nvim') ? stdpath('config') : expand('~/.vim')
-let data_dir = has('nvim') ? stdpath('data') .. '/site' : expand('~/.vim')
+if has('unix')
+    let config_dir = has('nvim') ? stdpath('config') : expand('~/.vim')
+    let data_dir = has('nvim') ? stdpath('data') .. '/site' : expand('~/.vim')
+else
+    let config_dir = has('nvim') ? stdpath('config') : expand('~/vimfiles')
+    let data_dir = has('nvim') ? stdpath('data') .. '/site' : expand('~/vimfiles')
+end
 
 " Figure out the system Python for Neovim.
 if exists("$VIRTUAL_ENV")
@@ -198,12 +203,21 @@ if using_vim
 
     " better backup, swap and undos storage for vim (nvim has nice ones by
     " default)
-    set directory=~/.vim/dirs/tmp     " directory to place swap files in
-    set backup                        " make backup files
-    set backupdir=~/.vim/dirs/backups " where to put backup files
-    set undofile                      " persistent undos - undo after you re-open the file
-    set undodir=~/.vim/dirs/undos
-    set viminfo+=n~/.vim/dirs/viminfo
+    if has('unix')
+        set directory=~/.vim/dirs/tmp     " directory to place swap files in
+        set backup                        " make backup files
+        set backupdir=~/.vim/dirs/backups " where to put backup files
+        set undofile                      " persistent undos - undo after you re-open the file
+        set undodir=~/.vim/dirs/undos
+        set viminfo+=n~/.vim/dirs/viminfo
+    else
+        set directory=~/vimfiles/dirs/tmp     " directory to place swap files in
+        set backup                        " make backup files
+        set backupdir=~/vimfiles/dirs/backups " where to put backup files
+        set undofile                      " persistent undos - undo after you re-open the file
+        set undodir=~/vimfiles/dirs/undos
+        set viminfo+=n~/vimfiles/dirs/viminfo
+    end
     " create needed directories if they don't exist
     if !isdirectory(&backupdir)
         call mkdir(&backupdir, "p")
@@ -442,7 +456,11 @@ if using_neovim
     " copied in clipboard
     let g:yankring_clipboard_monitor = 0
 else
-    let g:yankring_history_dir = '~/.vim/dirs/'
+    if has('unix')
+        let g:yankring_history_dir = '~/.vim/dirs/'
+    else
+        let g:yankring_history_dir = '~/vimfiles/dirs/'
+    end
 endif
 
 " Airline ------------------------------

@@ -94,7 +94,7 @@ if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|s
     endif
     colorscheme snazzy
 else
-    colorscheme delek
+    colorscheme desert
 endif
 
 "charactors not be wrapped
