@@ -41,7 +41,7 @@ set enc=utf-8
 set fenc=utf-8
 
 "supported file encoding
-set fencs=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set fencs=utf-8,gb2312,gb18030,gbk,ucs-bom,cp936,latin1
 
 "show line numbers
 set nu
@@ -87,8 +87,15 @@ set completeopt=longest,menu
 "endif
 
 "color scheme
-"colorscheme molokai
-"colorscheme solarized
+" use 256 colors when possible
+if has('gui_running') || using_neovim || (&term =~? 'mlterm\|xterm\|xterm-256\|screen-256')
+    if !has('gui_running')
+        let &t_Co = 256
+    endif
+    colorscheme snazzy
+else
+    colorscheme delek
+endif
 
 "charactors not be wrapped
 set iskeyword+=_,$,@,%,#,-

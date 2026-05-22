@@ -40,12 +40,12 @@ Installation instructions and docs at [vim.fisadev.com](https://vim.fisadev.com)
 | `,t` | open the location of current file |
 |  | **Tab** |
 | `tt` | open new tab |
-| `<alt>-left/right` | navigate tabs |
+| `<Alt>-left/right` | navigate tabs |
 | `-` | choose window |
 |  | **Clipboard** |
-| `<ctrl>-p/n` | cycle through clipboard (yank) history |
+| `<Ctrl>-p/n` | cycle through clipboard (yank) history |
 |  | **Find** |
-| `,e` | find file recursively. `<ctrl>-t` to open the file in new tab |
+| `,e` | find file recursively. `<Ctrl>-t` to open the file in new tab |
 | `,g` | find symbol (class/method/variable/...) in current file |
 | `,G` | find symbol (class/method/variable/...) in all opened files |
 | `,wg` | find current symbol under the cursor in current file |
@@ -60,7 +60,7 @@ Installation instructions and docs at [vim.fisadev.com](https://vim.fisadev.com)
 |  | **Coding** |
 | `,d` | go to definition of the thing under the cursor |
 | `,o` | find occurrences of the thing under the cursor |
-| `<shift>-k` | show docstring of the thing under the cursor |
+| `<Shift>-k` | show docstring of the thing under the cursor |
 | `\ci` | comment/uncomment code |
 | `F2` | open pending tasks list (comments in the current file starting with "TODO", "FIXME", etc) |
 | `F4` | open the item list of current file |
