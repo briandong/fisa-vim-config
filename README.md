@@ -46,15 +46,15 @@ Installation instructions and docs at [vim.fisadev.com](https://vim.fisadev.com)
 | `<Ctrl>-p/n` | cycle through clipboard (yank) history |
 |  | **Find** |
 | `,e` | find file recursively. `<Ctrl>-t` to open the file in new tab |
-| `,g` | find symbol (class/method/variable/...) in current file |
-| `,G` | find symbol (class/method/variable/...) in all opened files |
-| `,wg` | find current symbol under the cursor in current file |
-| `,wG` | find current symbol under the cursor in all opened files |
 | `,f` | find any text in current file |
 | `,F` | find any text in all opened files |
 | `,wf` | find current text under the cursor in current file |
 | `,wF` | find current text under the cursor in all opened files |
-| `,c` | find command |
+| `,g` | find symbol (class/method/variable/...) in current file |
+| `,G` | find symbol (class/method/variable/...) in all opened files |
+| `,wg` | find current symbol under the cursor in current file |
+| `,wG` | find current symbol under the cursor in all opened files |
+| `,c` | find commands (internal vim commands, or custom commands)|
 | `,r` | grep code recursively using Ack! |
 | `,wr` | grep current word under the cursor recursively using Ack! |
 |  | **Coding** |

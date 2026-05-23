@@ -1,6 +1,7 @@
 "gui font
 if has('unix')
     "set guifont=DejaVu\ Sans\ Mono\ Bold\ 13
+    "set guifont=JetBrainsMono\ Nerd\ Font\ Mono\ 13
     set guifont=MartianMono\ Nerd\ Font\ 13
 else
     set guifont=Lucida_Console:h14:cANSI
