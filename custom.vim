@@ -125,16 +125,18 @@ map <C-q> <C-W>q
 set foldmethod=indent
 set foldlevel=99
 
-"##########
-"SV support
-"##########
-au BufRead,BufNewFile *.sv  set filetype=systemverilog
-au BufRead,BufNewFile *.svh set filetype=systemverilog
-au BufRead,BufNewFile *.v   set filetype=systemverilog
-au BufRead,BufNewFile *.vh  set filetype=systemverilog
-au BufRead,BufNewFile *.svi set filetype=systemverilog
-au BufRead,BufNewFile *.sva set filetype=systemverilog
+"filetype detection
+"by file extension
+au BufRead,BufNewFile *.v,*.vh,*.sv,*.svh,*.svi,*.sva set filetype=systemverilog
+"by shebang
+au BufRead,BufNewFile * if getline(1) =~ '^#!.*bash'   | set filetype=sh     | endif
+au BufRead,BufNewFile * if getline(1) =~ '^#!.*python' | set filetype=python | endif
 
+
+"################
+" plugin options
+"################
+"
 "instant markdown 
 let g:instant_markdown_theme = 'dark'
 
